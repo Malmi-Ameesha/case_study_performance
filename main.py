@@ -64,6 +64,8 @@ for k, v in results.items():
     print(f"\nScenario with {k} agents:")
     print(v)
 
+#CHARTS
+
 # ====== Visualization 1: Average Wait Time ======
 plt.figure(figsize=(8, 5))
 plt.bar(results.keys(), [v["Average Wait Time"] for v in results.values()], color='skyblue')
