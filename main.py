@@ -64,29 +64,5 @@ for k, v in results.items():
     print(f"\nScenario with {k} agents:")
     print(v)
 
-#CHARTS
 
-# ====== Visualization 1: Average Wait Time ======
-plt.figure(figsize=(8, 5))
-plt.bar(results.keys(), [v["Average Wait Time"] for v in results.values()], color='skyblue')
-plt.title("Average Wait Time vs Number of Agents")
-plt.xlabel("Number of Agents")
-plt.ylabel("Average Wait Time (minutes)")
-plt.show()
 
-# ====== Visualization 2: Max Queue Length ======
-plt.figure(figsize=(8, 5))
-plt.plot(results.keys(), [v["Max Queue Length"] for v in results.values()], marker='o', linestyle='-', color='green')
-plt.title("Max Queue Length vs Number of Agents")
-plt.xlabel("Number of Agents")
-plt.ylabel("Max Queue Length")
-plt.grid(True)
-plt.show()
-
-# ====== Visualization 3: Agent Utilization ======
-plt.figure(figsize=(8, 5))
-plt.pie([v["Agent Utilization (%)"] for v in results.values()],
-        labels=[f"{k} Agents" for k in results.keys()],
-        autopct='%1.1f%%', startangle=140)
-plt.title("Agent Utilization Comparison")
-plt.show()
