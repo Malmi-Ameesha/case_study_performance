@@ -27,8 +27,10 @@ The simulation uses **SimPy (Discrete-Event Simulation)** and models:
 ## 🚀 Running the Simulation
 ### **Requirements**
 Install dependencies:
-```bash
-pip install simpy matplotlib numpy
-
-
-
+ ```sh
+   pip install simpy matplotlib numpy
+   ```
+Run the Simulation:
+ ```sh
+  python main.py
+   ```
